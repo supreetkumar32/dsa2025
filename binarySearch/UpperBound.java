@@ -1,7 +1,7 @@
 package binarySearch;
 
 public class UpperBound {
-
+//arr[mid]>x :upperBound
 	 public static int upperBound(int[] arr, int x, int n) {
 	        int low = 0, high = n - 1;
 	        int ans = n;
