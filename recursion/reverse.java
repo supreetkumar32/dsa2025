@@ -1,6 +1,6 @@
-package Recursion;
+package recursion;
 
-public class reverseArray {
+public class reverse {
 	public static void reverse(int a[],int i,int j) {
 		
 		if(i>=j)

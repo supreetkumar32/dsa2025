@@ -1,5 +1,9 @@
 package array;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 public class findallduplicates {
 	
 //1 to N-1 tak number present hai
