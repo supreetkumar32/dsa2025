@@ -1,5 +1,5 @@
 package patterns;
-
+//reference video: https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=4
 //For the outer loop ,count the number of lines
 //For the inner loop ,focus on the columns and connect them somehow to the rows
 // Print * inside the inner loop
