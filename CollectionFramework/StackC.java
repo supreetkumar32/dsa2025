@@ -26,6 +26,13 @@ public class StackC {
         while(!animals.isEmpty()) {
         	System.out.println(animals.pop());
         }
+//        Stack: [Lion, Dog, Horse, Cat]
+//        		Cat
+//        		Stack: [Lion, Dog, Horse]
+//        		Horse
+//        		Horse
+//        		Dog
+//        		Lion
 
 	}
 

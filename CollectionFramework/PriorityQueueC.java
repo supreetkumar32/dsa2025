@@ -21,6 +21,10 @@ public class PriorityQueueC {
         System.out.println(pq);
 
         System.out.println(pq.peek());
+        
+//        [40, 36, 24, 12]
+//        		[36, 12, 24]
+//        		36
 
 	}
 
