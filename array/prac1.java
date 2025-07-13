@@ -1,40 +1,41 @@
 package array;
 
+import java.util.ArrayList;
+import java.util.Optional;
+
 public class prac1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int nums[]= {7,8,9,11,12};
+		ArrayList<Integer> a=new ArrayList<>();
+		a.add(7);
+		a.add(1);
+		a.add(100);
+		a.add(4);
+		a.add(87);
+		a.add(8);
+		a.add(9);
+		
+		long startTime = System.nanoTime();
+		int z =a.stream().sorted().findFirst().orElse(null);
+		System.out.println("z "+z);
+		long endTime = System.nanoTime();
+		long duration1=endTime-startTime;
+		System.out.print(duration1);
+		System.out.println();
+		long startTime2 = System.nanoTime();
 		int min=Integer.MAX_VALUE;
-        for(int i=0;i<nums.length;i++){
-            if(min>nums[i] && nums[i]>=0){
-                min=nums[i];
-            }
-        }
-        int max=Integer.MIN_VALUE;
-	    for(int i=0;i<nums.length;i++){
-	        if(max<nums[i] && nums[i]>=0){
-	            max=nums[i];
-	        }
-	    }
-       System.out.println("min: "+ min);
-       System.out.println("max: "+ max);
-       
-       int sum=0;
-       for(int i=0;i<nums.length;i++){
-        if(nums[i]>0){
-            sum=sum+nums[i];
-        }
-       }
-       System.out.println("sum: "+ sum);
-       int maxsum=(max*(max+1))/2;
-       int minsum=(min*(min+1))/2;
-       System.out.println("maxsum: "+ maxsum);
-       System.out.println("minsum: "+ minsum);
-       int totalsumfrommintomax=maxsum-minsum+min;
-       System.out.println("totalsumfrommintomax: "+ totalsumfrommintomax);
-       int result=totalsumfrommintomax-sum;
-       System.out.println("result: "+result);
+		for(int i=0;i<a.size();i++) {
+			if(a.get(i)<min) {
+				min=a.get(i);
+			}
+		}
+		System.out.println("min " +min);
+		long endTime2 = System.nanoTime();
+		long duration2=endTime2-startTime2;
+		System.out.print(duration2);
+		
+		
 
 
 	}

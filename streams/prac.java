@@ -93,12 +93,13 @@ public class prac {
 //				    .collect(Collectors.toList());
 //		 System.out.println(sortedByName);
 //		 [Microservices:25000:96, Kubernetes:20000:91, FullStack:14000:91, Docker:20000:92, Azure:21000:99]
+//		
+//		System.out.println(
+//				courses.stream()
+//				.filter(course -> course.getReviewScore()>95)
+//				.mapToInt(course -> course.getNoOfStudents())//if we are using primitive we have to use mapToInt instead of map
+//				.max());//88000
 		
-		System.out.println(
-				courses.stream()
-				.filter(course -> course.getReviewScore()>95)
-				.mapToInt(course -> course.getNoOfStudents())//if we are using primitive we have to use mapToInt instead of map
-				.max());//88000
 
 
 	}
