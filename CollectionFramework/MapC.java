@@ -42,7 +42,19 @@ public class MapC {
         for(Integer value: numbers.values()) {
             System.out.println(value);
        }
-
+        
+        ////////////////////////making frequency map/////////
+        int v[]= {2,3,2,3,5};
+        int n=v.length;
+        HashMap<Integer,Integer> hm=new HashMap<>();
+        for(int i=0;i<n;i++) {
+        	int value=hm.getOrDefault(v[i], 0);
+        	hm.put(v[i],value+1);
+        }
+        for (Map.Entry<Integer, Integer> entry: hm.entrySet()) {
+        	System.out.println("Element: "+entry.getKey() +" Frequency "+ entry.getValue());
+        }
+        
 
 	}
 
