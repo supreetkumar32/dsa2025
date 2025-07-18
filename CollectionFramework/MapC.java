@@ -50,6 +50,7 @@ public class MapC {
         for(int i=0;i<n;i++) {
         	int value=hm.getOrDefault(v[i], 0);
         	hm.put(v[i],value+1);
+        	
         }
         for (Map.Entry<Integer, Integer> entry: hm.entrySet()) {
         	System.out.println("Element: "+entry.getKey() +" Frequency "+ entry.getValue());
