@@ -1,4 +1,4 @@
-package binarySearch;
+package binarySearchBasic;
 
 public class UpperBound {
 //arr[mid]>x :upperBound
