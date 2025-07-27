@@ -6,7 +6,7 @@ public class twoSum {
 
 	public static void main(String[] args) {
 
-		int[] nums = {1, 6, 2, 10, 3};
+		int[] nums = {3,78,9,1, 6, 2, 10, 3};
 		int n=nums.length;
 		int target=7;
 	

@@ -2,6 +2,7 @@ package ArrayMedium;
 
 import java.util.HashMap;
 
+//https://www.youtube.com/watch?v=S6tARGbBGEo
 public class countSubarraywithgivensum {
 
 	public static void main(String[] args) {
@@ -12,21 +13,37 @@ public class countSubarraywithgivensum {
 		int n=nums.length;
 		
 		//efficient 
-        HashMap<Integer, Integer> mpp=new HashMap<>();
+        HashMap<Integer, Integer> mpp=new HashMap<>();//we store the sum vs count(how many times it occurs)	
         int preSum = 0, cnt = 0;
-
         mpp.put(0, 1); // Setting 0 in the map.
         for (int i = 0; i < n; i++) {
             preSum += nums[i];
-            int remove = preSum - target;
+            int remaining = preSum - target;
 
-            // Add the number of subarrays to be removed:
-            cnt += mpp.getOrDefault(remove, 0);
+            cnt += mpp.getOrDefault(remaining, 0);
 
             mpp.put(preSum, mpp.getOrDefault(preSum, 0) + 1);
         }
     	System.out.println(cnt);
     }
+	
+	//alternate
+//	for (int i = 0; i < n; i++) {
+//	    preSum += nums[i];
+//	    int remaining = preSum - target;
+//
+//	    // Instead of getOrDefault(remaining, 0)
+//	    if (mpp.containsKey(remaining)) {
+//	        cnt += mpp.get(remaining);
+//	    }
+//
+//	    // Instead of mpp.put(preSum, mpp.getOrDefault(preSum, 0) + 1)
+//	    if (mpp.containsKey(preSum)) {
+//	        mpp.put(preSum, mpp.get(preSum) + 1);
+//	    } else {
+//	        mpp.put(preSum, 1);
+//	    }
+//	}
 
 
 
