@@ -1,4 +1,4 @@
-package sstrings;
+package StringBasics;
 
 public class Palindrome {
 

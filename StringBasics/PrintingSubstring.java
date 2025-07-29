@@ -1,4 +1,5 @@
-package sstrings;
+
+package StringBasics;
 
 public class PrintingSubstring {
 
