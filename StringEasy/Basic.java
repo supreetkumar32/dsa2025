@@ -29,6 +29,15 @@ public class Basic {
 		for(String x:sp) {
 		System.out.println(x);
 		}
+		
+		//converting string to array of characters
+		//char a[]=string.toCharArray();
+		
+		//converting array of characters to string
+		//char a[]=string.toCharArray();
+		//new String (a);
+		
+		
 
 	}
 
