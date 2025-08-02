@@ -1,4 +1,4 @@
-package StringBasics;
+package StringEasy;
 import java.util.HashSet;
 public class Duplicate {
 

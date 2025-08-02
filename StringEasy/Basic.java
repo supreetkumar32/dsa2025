@@ -1,4 +1,4 @@
-package StringBasics;
+package StringEasy;
 
 public class Basic {
 
@@ -23,6 +23,12 @@ public class Basic {
 		System.out.println(a.contains("r"));
 		System.out.println(a.startsWith("s"));
 		
+		//.equals compares the value
+		//==compares the references
+		String [] sp="supret".split("e");
+		for(String x:sp) {
+		System.out.println(x);
+		}
 
 	}
 

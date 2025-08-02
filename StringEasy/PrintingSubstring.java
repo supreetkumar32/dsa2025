@@ -1,5 +1,5 @@
 
-package StringBasics;
+package StringEasy;
 
 public class PrintingSubstring {
 
