@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class rightView {
-
+	//traverse node right left
     public List<Integer> rightSideView(TreeNode root) {
         ArrayList<Integer> ans = new ArrayList<>();
         int level = 0;

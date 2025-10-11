@@ -22,7 +22,7 @@ public class LeftView {
 	        leftSidePrint(root.right, level + 1, ans);
 	    }
 
-	    // 👇 Main method to test the code
+	    //  Main method to test the code
 	    public static void main(String[] args) {
 	        /*
 	               1
