@@ -48,7 +48,7 @@ public class VerticalOrderTraversal {
 //			ans.addAll(e);
 //		}
 		
-		//for type 
+		//for type 2 
 		 List<List<Integer>> ans = new ArrayList<>();
 	        for (ArrayList<Integer> e : map.values()) {	        	
 	            ans.add(e);
