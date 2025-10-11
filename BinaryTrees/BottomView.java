@@ -35,6 +35,7 @@ public class BottomView {
 //				map.put(key, new ArrayList<Integer>());
 //			}
 //			map.get(key).add(cur.node.val);
+			
 			 // Overwrite every time → last element stays (bottom view)
             map.put(key, new ArrayList<>(Arrays.asList(cur.node.val)));
 			if(cur.node.left!=null) {
