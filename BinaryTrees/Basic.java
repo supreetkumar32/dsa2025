@@ -80,5 +80,13 @@ public class Basic {
 		printNodesAtKDisteance(root.right, k - 1);
 
 	}
+	
+    public static void main(String[] args){
+        Basic btree = new Basic();
+        Node root=btree.createBinaryTree();
+        btree.inOrderTraversal(root);
+        btree.preOrderTraversal(root);
+        btree.postOrderTraversal(root);
+    }
 
 }
