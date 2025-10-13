@@ -65,6 +65,40 @@ public class Diameter {
         System.out.println(result);
     }
 
+	//leetcode
+//	class Solution {
+//
+//        static class DiaPair {
+//        int ht;
+//        int dia;
+//    }
+//
+//        private static DiaPair diameterHelper(TreeNode node) {
+//        if (node == null) {
+//            DiaPair bp = new DiaPair();
+//            bp.ht = -1;  // base height for null
+//            bp.dia = 0;
+//            return bp;
+//        }
+//
+//        DiaPair lp = diameterHelper(node.left);
+//        DiaPair rp = diameterHelper(node.right);
+//
+//        DiaPair mp = new DiaPair();
+//        mp.ht = Math.max(lp.ht, rp.ht) + 1;
+//
+//        int fes = lp.ht + rp.ht + 2; // full edge span through this node
+//        mp.dia = Math.max(fes, Math.max(lp.dia, rp.dia));
+//
+//        return mp;
+//    }
+//
+//    public int diameterOfBinaryTree(TreeNode node) {
+//        DiaPair result = diameterHelper(node);
+//        return result.dia;
+//        
+//    }
+//}
 
 
 }
