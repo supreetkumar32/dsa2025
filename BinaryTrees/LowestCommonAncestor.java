@@ -6,16 +6,16 @@ public class LowestCommonAncestor {
         if (root == null) return null;
 
         // If current node is either p or q, return root
-        if (root.val == p.val || root.val == q.val) return root;
+        if (root == p|| root == q) return root;
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
 
-        // If p and q found in different subtrees → root is LCA
-        if (left != null && right != null) return root;
+        if(left==null) return right;
+        if(right==null) return left;
 
-        // Otherwise return whichever side is non-null
-        return left != null ? left : right;
+        //if left and right both are not null
+        return root;
     }
 	
 	   public static void main(String[] args) {
